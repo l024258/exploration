@@ -1,0 +1,10 @@
+accelerate
+transformers
+sentence_transformers
+langchain==0.0.286
+openai
+faiss-cpu
+unstructured
+tiktoken
+rich #for console formatting
+gradio
