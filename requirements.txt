@@ -1,10 +1,11 @@
 accelerate
 transformers
 sentence_transformers
-langchain==0.0.286
-openai
+langchain==0.1.4
+langchain-openai==0.0.5
 faiss-cpu
 unstructured
-tiktoken
-rich #for console formatting
 gradio
+pypdf
+docx2txt
+python-decouple
