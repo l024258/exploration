@@ -4,6 +4,7 @@ sentence_transformers
 langchain==0.1.4
 langchain-openai==0.0.5
 faiss-cpu
+chromadb
 unstructured
 gradio
 pypdf
