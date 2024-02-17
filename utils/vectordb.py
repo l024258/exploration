@@ -7,10 +7,13 @@ class VectorDB:
     def __init__(self):
         pass
     
-    def create_and_dump(self, embedding_model, text_splitter, inp_text):
+    def create_and_dump(self, embedding_model, text_splitter, inp_text, metadata=[]):
         if isinstance(inp_text, str):
             texts = text_splitter.split_text(inp_text)
-            docs = [Document(page_content=t) for t in texts]
+            if metadata:
+                docs = [Document(page_content=t.strip(), metadata=metadata) for t in texts]
+            else:
+                docs = [Document(page_content=t.strip()) for t in texts]
         else:
             docs = text_splitter.split_documents(inp_text)
         if not os.path.exists('./../temp'):
