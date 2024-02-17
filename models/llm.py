@@ -36,14 +36,14 @@ class LLM:
                 temperature=temp,
                 max_tokens=max_tokens
             )
-        if self.model_name == 'gpt-4':
+        elif self.model_name == 'gpt-4':
             llm = AzureChatOpenAI(
                 openai_api_version=config('AZURE_CHAT_OPENAI_API_VERSION'),
                 azure_deployment=config('AZURE_CHAT_OPENAI_DEPLOYMENT'),
                 temperature=temp,
                 max_tokens=max_tokens
             )
-        if self.model_name in self.open_source_llms_list:
+        elif self.model_name in self.open_source_llms_list:
             name2id = {
                 'mistral' : "mistralai/Mistral-7B-v0.1",
                 'mistral-chat' : "mistralai/Mistral-7B-Instruct-v0.2",
