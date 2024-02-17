@@ -1,7 +1,9 @@
+import os
 from langchain_community.vectorstores import Chroma
 from langchain.docstore.document import Document
 from langchain.vectorstores.base import VectorStoreRetriever
-import os
+from langchain.retrievers import ContextualCompressionRetriever
+from langchain.retrievers.document_compressors import CohereRerank
 
 class VectorDB:
     def __init__(self):
@@ -22,7 +24,14 @@ class VectorDB:
 
         return vectorstore
 
-    def load_retriever(self, embedding_function, vectorstore_path='./../temp/chroma_db'):
+    def load_retriever(self, embedding_function, vectorstore_path='./../temp/chroma_db', top_k=5, re_ranker=None):
         vectorstore = Chroma(persist_directory=vectorstore_path, embedding_function=embedding_function)
-        retriever = VectorStoreRetriever(vectorstore=vectorstore)
+        retriever = VectorStoreRetriever(vectorstore=vectorstore, search_kwargs={"k": top_k})
+        if re_ranker == 'cohere':
+            compressor = CohereRerank()
+            compression_retriever = ContextualCompressionRetriever(
+                base_compressor=compressor, base_retriever=retriever,
+                top_n=5
+            )
+            return compression_retriever
         return retriever
