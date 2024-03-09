@@ -33,5 +33,5 @@ class VectorDB:
                 base_compressor=compressor, base_retriever=retriever,
                 top_n=5
             )
-            return compression_retriever
-        return retriever
+            return compression_retriever, vectorstore
+        return retriever, vectorstore
