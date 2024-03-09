@@ -8,7 +8,7 @@ config = AutoConfig(search_path='./../.env')
 class LLM:
     def __init__(self, model_name):
         self.model_name = model_name
-        self.open_source_llms_list = ['mistral', 'mistral-chat', 'llama2', 'llama2-chat', 'tinyllama']
+        self.open_source_llms_list = ['mistral-chat', 'llama2-chat', 'tinyllama']
 
     def load_hf_pipeline(self, model_id, max_tokens=256, temp=0.0, top_k=1):
         model_id = model_id
@@ -45,9 +45,7 @@ class LLM:
             )
         elif self.model_name in self.open_source_llms_list:
             name2id = {
-                'mistral' : "mistralai/Mistral-7B-v0.1",
                 'mistral-chat' : "mistralai/Mistral-7B-Instruct-v0.2",
-                'llama2' : "meta-llama/Llama-2-7b",
                 'llama2-chat' : "meta-llama/Llama-2-7b-chat-hf",
                 'tinyllama' : "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
             }
