@@ -6,7 +6,7 @@ class LLM:
         self.model_name = model_name
         self.open_source_llms_list = ['mistral-chat', 'llama2-chat', 'tinyllama']
         self.gguf_llm_list = ['mistral-chat-gguf', 'llama2-chat-gguf', 'falcon2-chat-gguf']
-        self.ollama_llm_list = ['llama3', 'llama3:text']
+        self.ollama_llm_list = ['llama3']
 
     def load_hf_pipeline(self, model_id, max_tokens=256, temp=0.0, top_k=10):
         from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
@@ -56,16 +56,8 @@ class LLM:
 
     def load_model(self, max_tokens=256, temp=0.0, top_k=10):
         from langchain_openai import AzureChatOpenAI, AzureOpenAI
-        
-        if self.model_name == 'gpt-3':
-            llm = AzureOpenAI(
-                deployment_name=config('AZURE_OPENAI_DEPLOYMENT_NAME'),
-                model_name=config('AZURE_OPENAI_MODEL_NAME'),
-                api_version = config('AZURE_OPENAI_API_VERSION'),
-                temperature=temp,
-                max_tokens=max_tokens
-            )
-        elif self.model_name == 'gpt-3.5':
+
+        if self.model_name == 'gpt-3.5':
             llm = AzureChatOpenAI(
                 openai_api_version=config('AZURE_CHAT_OPENAI_API_VERSION'),
                 azure_deployment=config('AZURE_GPT35_CHAT_OPENAI_DEPLOYMENT'),
@@ -90,7 +82,7 @@ class LLM:
             name2path = {
                 'mistral-chat-gguf' : "./../models_repo/Mistral-7B-Instruct/mistral-7b-instruct-v0.2.Q4_K_M.gguf",
                 'llama2-chat-gguf' : "./../models_repo/Llama2-7B-chat/llama-2-7b-chat.Q4_K_M.gguf",
-                'falcon2-chat-gguf' : './../models_repo/Falcon2-11B-Instruct/',
+                'falcon2-chat-gguf' : './../models_repo/Falcon2-11B-Instruct/falcon2-11B.Q4_K_M.gguf',
             }
             llm = self.load_llama_cpp_model(name2path[self.model_name], max_tokens, temp, top_k)
         elif self.model_name in self.ollama_llm_list:
