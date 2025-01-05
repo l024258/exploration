@@ -1,10 +1,17 @@
+import os
+import sys
+
+# Get the current working directory and add the parent directory to the Python path
+current_working_directory = os.getcwd()
+sys.path.append(os.path.join(current_working_directory, ".."))
+
+from decouple import AutoConfig
+config = AutoConfig()
+
+
 from langchain_openai import AzureOpenAIEmbeddings
 from langchain.embeddings import HuggingFaceEmbeddings
 import torch
-
-from decouple import AutoConfig
-config = AutoConfig(search_path='./../.env')
-
 class EM:
     def __init__(self, model_name):
         self.model_name = model_name
