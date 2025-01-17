@@ -1,0 +1,18 @@
+Title
+    Abstract
+        300 word abstract of the document
+    Introduction
+        Introduction covering problem definition, current challenges, methods discussed, results analysis.
+        This should be done in 1 page
+    Methods
+        AI Evolution
+            Various methodologies, models discussed in ai.txt
+        AI for Healthcare
+            Various methodologies, models discussed in ai-healthcare.txt
+        AI for Healthcare
+            Various methodologies, models developed for ai in finance
+    Conclusion
+        200 word conclusion of the entire document.
+    References
+        list of referenced documents/articles
+

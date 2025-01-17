@@ -1,0 +1,414 @@
+22 | September 2023 Medical Writing | Volume 32 Number 3
+Katja Martin
+medtextpert, Zwillikon, Switzerland
+Correspondence to:
+Katja Martin
+email@medtextpert.com
+Abstract
+Whether you’re an early adopter, an
+occasional user, or yet to acknowledge its
+transformative potential, artificial intelligence
+(AI) – specifically generative AI applications
+underpinned by large language models – is
+undeniably shaping our present and destined
+to influence the future of medical writing.
+Achieving a comprehensive understanding of
+these models can pave the way for their
+optimal application in areas where they excel.
+Additionally, this understanding helps to
+maintain a realistic, balanced perspective,
+allowing us to avoid the pitfalls associated
+with excessive or unfounded fear stirred by
+the current AI hype and related exaggerated
+promises.
+A selection of AI applications offers
+insights into specific tasks for which
+generative AI can be effectively utilised. These
+applications can truly make a difference by
+saving time, streamlining workflows, and
+potentially enhancing the quality of the
+resulting outputs.
+Introduction
+n n an era of rapid technological pro -
+gression, artificial intelligence (AI)
+language models have emerged as transformative
+forces, significantly altering traditional workflows
+and methodologies across many fields, including
+medical writing.
+As medical writers preparing for an
+AI-dominated future, we need to understand how
+these AI language models work. It will allow us
+to truly leverage their potential, comprehend
+their capabilities and limitations, and integrate
+them effectively into our writing processes.
+Many of us tend to view the quantity of
+training data and parameters as crucial deter -
+minants of a model’s performance. Indeed, we get
+all hyped up when respective players announce
+that the next-generation AI language model will
+be trained on x amount more data
+or are tailored towards a more
+specific subject, additionally
+claiming enhanced speed, relia -
+bility, and accuracy. Yet, are these
+factors truly game-changing?
+Maybe not exclusively. The
+intrinsic nature of the model, the
+underlying algorithms, and their
+data processing method ologies
+hold equal significance.
+Therefore, let’s aim to grasp
+the mechanics of AI language
+models before delving into their
+practical applications.
+Understand AI language models and
+their limitations
+Behind the scenes – Terminology
+A large language model (LLM) is a deep
+learning technique, and a subset of machine
+learning, that uses artificial neural networks to
+analyse immense volumes of data, unveil intricate
+patterns, and guide decision-making. Through
+extensive training on massive datasets, LLMs
+develop an unparalleled capacity to recognise,
+comprehend, predict, and generate novel content
+spanning myriad domains
+(Figure 1).
+The term generative AI
+(genAI) refers to all AI tools that
+use LLMs to primarily create
+content such as images (e.g.,
+Midjourney or Stable Diffusion),
+text (e.g., GPT-4, PaLM, or
+Claude), code (e.g., Copilot), or
+audio (e.g., VALL-E or
+resemble.ai) in response to short
+prompts. To process a prompt,
+its words need to be converted
+into a model-readable input
+format, such as vectors or tokens.
+Tokens can be as small as
+individual characters or punctu ation symbols, or
+as large as words or even whole sentences,
+depending on the model and tokenisation
+method (e.g., rule-based, statistical, neural). This
+process of breaking down text into individual
+units is called tokenisation (Figure 2).
+doi: 10.56012/qalb4466
+AI language models are transforming
+the medical writing space – like it or not!
+genAI
+ML
+AI
+DL
+LLM
+ASR/
+NLP
+Figure 1. Large language models (LLMs) and generative AI (genAI)
+as a subset of artificial intelligence (AI)
+I
+AI Artificial Intelligence
+ML Machine Learning
+DL Deep Learning
+ASR/NLP Automatic Speech
+Recognition/Natural
+Language Processing
+LLM Large Language Model
+genAI Generative AI
+These
+applications can
+truly make a
+difference by
+saving time,
+streamlining
+workflows, and
+potentially
+enhancing the
+quality of the
+resulting outputs.
+www.emwa.org Volume 32 Number 3 | Medical Writing September 2023 | 23
+Martin | AI language models are transforming the medical writing space
+Tokens are processed by assigning each token
+a numerical ID as AI models can only process
+numerical data.
+Modern LLMs and hence genAI tools
+successfully apply transformer architecture
+(Figure 3). Two key features define transformers:
+the encoder-decoder structure and the attention
+mechanism. The encoder processes the input data
+and generates a set of context vectors. Using these
+vectors, the decoder generates the output by
+selecting the token with the highest probability
+in a sequence of tokens. The
+attention mechanism, a crucial
+element in transformers, assigns a
+weight to an input token, guiding
+the model on where to focus
+during output generation. This
+process enables the model to
+manage long-range data depen -
+dencies, effectively equipping the
+model with long-term memory
+(Figure 3).
+When a prompt is submitted
+to an AI language model, it
+generates the response by
+selecting the most likely next
+token based on calculated
+context and specific rules/
+settings. That means tokens/
+words are chosen based on their
+likelihood to follow.
+In simple terms, these models
+are mathematical functions sup -
+ported by powerful computing
+capabilities, but they cannot
+think. This is an important factor to consider
+when assessing the results produced by these AI
+tools, setting your expectations, and highlighting
+their limitations.
+Sophisticated prompt engineering, which
+involves giving specific and detailed instructions
+to guide the model in its decision-making or
+prediction process, can enhance a model’s
+performance. Depending on the task, methods
+such as few-shot prompting, which provides a
+few input-output examples, chain of thought
+Here is a text broken into tokens. Not
+all words are their token! They can be
+split and, as punctuation, present other
+tokens.
+Tokens Words
+32 23
+Characters
+104
+Figure 2. Example of tokenisation
+Tokens
+32
+Words
+23
+Characters
+104
+In simple terms,
+these models are
+mathematical
+functions
+supported by
+powerful
+computing
+capabilities, but
+they cannot think.
+24 | September 2023 Medical Writing | Volume 32 Number 3
+prompting (CoT), which uses sequential prompts to encourage reasoning or guide the model through complex tasks, and prompt iteration, have been found to be most successful in elevating a model’s performance.
+To avoid confusion, the term LLM/AI language model is used in conjunction with a range of natural language processing tasks, including text generation, translation, content summary, rewriting content, classification and categorisation, sentiment analysis, and conversational AI and chatbots.
+OpenAI’s GPT-series (the GPT stands for Generative Pre-trained Transformer) is widely recognised as one of the most extensively utilised LLMs at present. ChatGPT, along with its respective plugins, stands out as a prominent representative within this series.
+In the following sections, we will focus on text-generating AI tools and use terminology such as LLM, AI language model, AI assistant interchangeably.
+Limitations of AI language models
+Despite being trained on increasingly larger datasets, using more parameters and unprece dented computational power, current genAI models are primarily sophisticated “prediction engines”. While their performance consistently improves, it is important to remember that their output lacks true comprehension, critical thinking, or consciousness. Consequently, the generated texts have a tendency to be lengthy and articulate replies that could potentially include plausible but inaccurate or biased information. Therefore, it is mandatory that users review the output critically and always check its accuracy, appropriateness, context, and actual usefulness before accepting any result.
+Especially in medical writing, text-generating AI tools should be regarded as assistants or a tool in the toolbox supporting workflows, providing a starting base, or helping to overcome writer’s block. The human ability to comprehend con text, strategise, critically evaluate, and convey nuanced emotions remains irreplaceable.
+It is also essential to address privacy concerns when using text-generation tools. Careful consid eration should be given to the inclusion of safe input data to prevent the inadvertent sharing of confidential or proprietary information.
+The potential disruptiveness of this technology is not going unrecognised. Many journals and organisations have published guidelines with the intent to regulate the use of text-generation tools for publications (Springer-Nature,1 Elsevier,2 Taylor & Francis,3 JAMA Network,4 the World Association of Medical Editors [and British Medical Journal],5 and the International Committee of Medical Journal Editors6).
+With a grasp of these basics, you’re well-prepared to begin or continue your journey with AI language models. Embracing an open mind and adopting a trial-and-error approach will facilitate exploration, learning, and the develop ment of an AI-driven mindset. Establishing a clear understanding of these models will enable their effective use in workflow areas where they truly excel. This knowledge also helps to maintain a realistic perspective, preventing undue fear or over-enthusiasm sparked by the current AI hype and its associated promises and expectations.
+AI tools that can assist medical writers
+Besides ChatGPT and its respective plugins, hundreds of AI-assisted, text-generating tools are launched weekly or integrated into existing applications as AI assistants. Keeping track of these numerous tools can be daunting for a busy professional. Therefore, below is presented a curated selection of widely accepted tools which could prove valuable to the majority of medical writers (see also Figure 4).
+AI language models are transforming the medical writing space | Martin
+Can genAI assist medical writing?
+Yes it can.
+GenAI, and ChatGPT in particular, can be used to assist with many tasks, including:
+lParaphrasing
+lReformatting references to different styles
+lRewriting materials and methods sections
+lExplaining statistical tests
+lRewriting abstracts
+lExtracting article highlights
+lSuggesting keywords
+lWriting submission letters
+lSummarising scientific articles or medical information for various audiences
+lWriting lay summaries
+lRepurposing available information for different formats and various audiences
+lCreating educational and other training materials such as courses, webinars, presentations, hand-outs
+lCompiling product and safety information
+lGenerating responses to customer inquiries
+lGenerating scripts for chatbots/virtual assistants and much more.
+Embracing an open mind and adopting a trial-and-error approach will facilitate exploration, learning, and the development of an AI-driven mindset.
+Text-generating AI applications are sophisticated prediction engines; they predict words or tokens based on their likelihood to follow.
+Think of them as “word calculators” that use mathematic functions and mechanisms to fill in the gaps/blanks in a data set with the intental ways to provide an answer.
+Their performance depends not only on the quantity and quality of their training data or parameters, but also on factors such as model characteristics (transformer architecture, fine-tuning, combination of models), tokenisation method, and human skills (e.g., prompt engineering).
+Don’t forget
+3
+3
+3
+www.emwa.org Volume 32 Number 3 | Medical Writing September 2023 | 25
+Martin | AI language models are transforming the medical writing space
+Encoder
+Decoder
+multihead
+self-attention
+encoder-decoder
+structure
+TRANSFORMER
+Here is a text broken into tokens. Not
+all words are their token! They can be
+split and, as punctuation, present other
+tokens.
+Input
+predicted
+Output
+Transformer architecture
+Figure 3. Illustration of transformer architecture
+Writing and rewriting assistants
+Let’s start with Quillbot and Wordtune, two AI-rewriting
+assistants. Quillbot is a comprehensive paraphrasing tool
+targeted at improving grammar and enhancing wording;
+it also features a summariser tool. Its smaller alternative,
+Wordtune, helps you rephrase, improves tone and word
+choice, and is able to shorten or expand given text.
+Conversation
+Another extremely useful application and time-saver is
+ChatPDF. It allows you to chat with uploaded pdfs, such
+as scientific articles. It can answer specific questions and,
+when prompted correctly, returns structured responses.
+Research plus writing assistance
+scite_ is a platform that helps discover and evaluate
+scientific articles via Smart Citations. Smart Citations
+allows users to see how a publication has been cited by
+providing the context of the citation and a classification
+describing whether it provides supporting or contrasting
+evidence for the cited claim. Importantly, scite_ offers an
+integrated conversational AI Assistant, based on GPT-3.5.
+It can answer questions from a database of 180 million
+articles, book chapters, and data sets. Just like ChatGPT,
+it can assist you in the writing process for a plethora of
+materials.
+SciSpace, an AI research assistant, is not only able to
+read, understand, and explain uploaded scientific
+literature, but it also comprises a citation generator,
+paraphraser, and AI detector.
+SciSpace Copilot, available as Chrome Extension, can
+help understand technical language, math, and tables in
+PDFs, and allows you to organise and annotate materials
+to keep track of important information. This one is to
+watch!
+Another free AI research assistant is Elicit. It assesses
+publications from Semantic Scholar and helps expedite the
+literature review process. When queried, it retrieves
+relevant papers and summarises key information in table
+format.
+In addition, the AI tools ResearchRabbit and
+Connected Papers are definitely worth checking out. For
+these tools, the user provides specific citations (seeding)
+and the models search and visually map similar work. This
+greatly speeds up and deepens the discovery phase, no
+matter what research phase you are in.
+Summary plus writing assistance
+Scholarcy is an online article summariser tool for articles,
+reports, and book chapters. It highlights key sections for
+users to easily save and export summaries to return to at a
+later date.
+26 | September 2023 Medical Writing | Volume 32 Number 3
+AI language models are transforming the medical writing space | Martin
+Unlike Elicit, it can only summarise one
+publication at a time but in much more detail.
+It extracts key concepts, a synopsis of the fulltext,
+comparative analysis, and more.
+An alternative AI-assisted research and
+summary tool is genei. It is designed to help users
+improve productivity by quickly extracting key
+information from articles, analyzing research, and
+summarizing articles. The paid subscription has
+the usual GPT-3 capabilities.
+Generative AI tools excel in marketing
+support
+GenAI tools have long been embraced in content
+marketing, where they outperform classical
+copywriters. From blogs, and website content, to
+social media posts, email marketing campaigns,
+newsletters, ads, and much more – genAI is
+widely adopted.
+I recommend trying out Jasper.ai, a powerful
+all-in-one content generation platform trained to
+write original, creative content for all sorts of
+marketing assets. It also builds on OpenAI but
+adds other models to provide tailored solutions
+to specific content marketing needs. A big plus is
+that it comes with templates that help you
+structure and detail your prompts
+and a plagiarism checker.
+Copy.Ai is a valid alternative
+to Jasper. Another tool, AIwriter,
+searches, writes content,
+and adds valid references to this
+content.
+Every week, more than 100
+new AI tools are released, and it is up to us, the
+users, to stay informed and check their feasi bility
+to enhance our workflows. Only the most
+valuable appli cations will get adopted and
+survive. It is impossible to predict what the next
+developments and releases will be and how the
+tools will integrate and complement each other.
+Exciting times are ahead!
+Future-proof yourself and let AI
+amaze you!
+AI language models and applications are set to
+reshape the medical writing space, redefining
+traditional workflows and methodologies in the
+process. Navigating this shift
+requires an open attitude,
+curiosity, and a commitment to
+continuous learning. Consider
+genAI applications as tools in
+your arsenal. Merely possessing a
+toolbox isn’t enough; you need to
+know which tool to use for which
+task and how to use it effectively.
+Our unique human abilities – understanding
+context, strategic thinking, critical evaluation,
+and conveying nuanced emotions – remain
+invaluable. They set us apart and play a crucial
+role in moderating and refining AI-generated
+output. Harness the potential of these AI tools to
+boost your productivity and elevate the quality
+GPT-4
+Figure 4. Selection
+of AI-assisted
+applications that
+can support a
+medical writer’s
+workflow
+Only the most
+valuable
+applications will
+get adopted and
+survive.
+www.emwa.org Volume 32 Number 3 | Medical Writing September 2023 | 27
+Martin | AI language models are transforming the medical writing space
+of your work instead of fighting them.
+Crafting credible, evidence-based materials that are accurate, clear, and compelling still demands the expertise of a skilled medical writer. Remember, AI tools are not substitutes but powerful allies in our writing journey. Let’s leverage these advancements to build a promising future in medical writing.
+Acknowledgments
+The author would like to thank Christopher David for his assistance in editing and proofreading.
+I used ChatGPT (OpenAI, model GPT-4, version May 24, 2023) to rephrase some passages. I reviewed the AI-generated text and edited it as needed. I take full responsibility for the generated content.
+Disclaimers
+The opinions expressed in this article are the author’s own and are not necessarily shared by EMWA. This article was prepared in May 2023 and reflects the status quo at that time. It is intended to provide understandable and memorable background information on AI language models. The importance of the selected tools may have changed by the time of publication.
+Disclosures and conflicts of interest
+The author is self-employed and declares no conflicts of interest.
+References
+1.Tools such as ChatGPT threaten transparent science; here are our ground rules for their use. Nature. 2023;613(945):612. doi:10.1038/d41586-023-00191-1.
+2.Elsevier. The use of AI and AI-assisted writing technologies in scientific writing. 2023 [cited 2023 May 22]. Available from: https://www.elsevier.com/about/policies/publishing-ethics/the-use-of-ai-and-ai-assisted-writing-technologies-in-scientific-writing.
+3.Taylor & Francis. Defining authorship in a research paper. Author Services; 2023 [cited 2023 May 22]. Available from: https://authorservices. taylorandfrancis.com/editorial-policies/defining-authorship-research-paper/.
+4.Flanagin A, Bibbins-Domingo K, Berkwits M, Christiansen SL. Nonhuman “authors” and implications for the integrity of scientific publication and medical knowledge. JAMA. 2023;329(8):637–9. doi:10.1001/jama.2023.1344
+5.Zielinski C, Winker MA, Aggarwal R, et al., for the WAME Board. Chatbots, generative AI, and scholarly manuscripts. WAME Recommendations on Chatbots and Generative Artificial Intelligence in Relation to Scholarly Publications. 2023. [cited 2023 July 7]. Available from: https://wame.org/page3.php?id=106
+6.ICMJE. Defining the Role of Authors and Contributors. 2023 [cited 2023 May 22]. Available from: https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html
+Further Reading
+1.Center for Security and Emerging Technology. What are Generative AI, Large Language Models, and Foundation Models? Georgetown University; 2023 [cited 2023 May 30]. Available from: https://www.georgetown.edu/cset/what-are-generative-ai-large-language-models-foundation-models.
+2.Vaswani A, Shazeer N, Parmar N, et al. Attention is all you need. Adv Neural Inf Process Syst. 2017;30. Available from: https://arxiv.org/pdf/1706.03762.pdf.
+3.Kerner SM. Large language model (LLM) [Internet]. TechTarget; 2023 [cited 2023 May 30]. Available from: https://www.techtarget.com/whatis/ definition/large-language-model-LLM
+4.Nikulski J. How to use transformer-based NLP models. Towards Data Science; 2023 [cited 2023 May 30]. Available from: https://towardsdatascience.com/how-to-use-transformer-based-nlp-models-a42adbc292e5
+5.Mearian L. How enterprises can use ChatGPT and GPT-3. Computerworld; 2023 [cited 2023 May 30]. Available from: https://www.computerworld.com/article/3687614/how-enterprises-can-use-chatgpt-and-gpt-3.html.
+6.Nelson D. What are transformer neural networks? Unite.AI. 2023 2023 [cited 2023 May 30]. Available from: https://www.unite.ai/what-are-transformer-neural-networks/
+7.Merritt R. What Is a transformer model? NVIDIA Blogs. 2023 [cited 2023 May 30]. Available from: https://blogs.nvidia.com/blog/what-is-a-transformer-model/
+8.Ankit U. Transformer neural networks: A step-by-step breakdown. 2023 [cited 2023 May 30]. Available from: https://builtin.com/artificial-intelligence/transformer-neural-network
+9.Gusenbauer M. Audit AI search tools now, before they skew research. Nature. 2023;617(7961):439. doi:10.1038/d41586-023-01613-w.
+10.Kung JY. Elicit (product review). J Can Health Libr Assoc. 2023;44(1):15–8. doi:10.29173/jchla29657.
+Author information
+Katja Martin, PhD, an “AI-enthusiast”, is the owner of medtextpert, a medical communication agency that focuses on healthcare content creation and scientific publication support. She has been authoring medical publications and communication assets for the medical device and pharmaceutical industry for over 20 years.
